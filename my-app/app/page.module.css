@@ -1,0 +1,110 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 20px 100px 20px;
+  background-color: #f8f9fa;
+}
+
+.content {
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+
+.description {
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.primaryButton {
+  display: block;
+  width: 100%;
+  padding: 16px 24px;
+  background-color: #7c3aed;
+  color: white;
+  text-decoration: none;
+  border-radius: 12px;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: background-color 0.2s ease;
+}
+
+.primaryButton:hover {
+  background-color: #6d28d9;
+}
+
+.navigationButton {
+  display: block;
+  width: 100%;
+  padding: 16px 24px;
+  background-color: #cb1c1c;
+  color: white;
+  text-decoration: none;
+  border-radius: 12px;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: background-color 0.2s ease;
+}
+
+.navigationButton:hover {
+  background-color: red;
+}
+
+.secondaryButton {
+  display: block;
+  width: 100%;
+  padding: 16px 24px;
+  background-color: #e5e7eb;
+  color: #374151;
+  text-decoration: none;
+  border-radius: 12px;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: background-color 0.2s ease;
+}
+
+.secondaryButton:hover {
+  background-color: #d1d5db;
+}
+
+/* Mobile optimizations */
+@media (max-width: 480px) {
+  .container {
+    padding: 20px 15px 100px 15px;
+  }
+
+  .title {
+    font-size: 1.75rem;
+  }
+
+  .description {
+    font-size: 0.9rem;
+    margin-bottom: 32px;
+  }
+
+  .primaryButton,
+  .secondaryButton {
+    padding: 14px 20px;
+    font-size: 0.95rem;
+  }
+
+}
+
